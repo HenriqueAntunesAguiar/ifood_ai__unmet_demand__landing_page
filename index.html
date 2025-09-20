@@ -43,35 +43,33 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <h1 class="hero-title">Desenvolvendo a <span>AI</span> do <span>Ifood</span>!</h1>
-                    <p class="hero-subtitle">Este projeto demonstra cada etapa do processo de desenvolvimento de uma inteligência artificial para otimizar a experiência de usuários e restaurantes no Ifood.</p>
+                    <h1 class="hero-title">Desenvolvendo a <span>IA</span> do <span>Ifood</span>!</h1>
+                    <p class="hero-subtitle">Está IA do Ifood identifica pedidos de clientes dos quais o prato solicitado não tem na região, então a IA busca e informa aos restaurantes que podem fazer este prato, a recomendação de incluir no cardapio.</p>
                     <a href="#processo" class="btn btn-ifood">Explorar Processo</a>
                 </div>
                 <div class="col-lg-6">
-    <div class="video-thumbnail-container">
-        <img src="https://img.youtube.com/vi/mnnKv4sX3zI/maxresdefault.jpg" alt="Vídeo AI Ifood" class="img-fluid rounded-3 shadow video-thumbnail">
-        <div class="play-button" data-bs-toggle="modal" data-bs-target="#videoModal">
-            <i class="fas fa-play"></i>
-        </div>
-    </div>
-</div>
+                    <div class="video-thumbnail-container">
+                        <img src="https://img.youtube.com/vi/mnnKv4sX3zI/maxresdefault.jpg" alt="Vídeo AI Ifood" class="img-fluid rounded-3 shadow video-thumbnail">
+                        <div class="play-button" data-bs-toggle="modal" data-bs-target="#videoModal">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
 
 <!-- Modal do Vídeo -->
-<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="videoModalLabel">Processo de Desenvolvimento da AI Ifood</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="ratio ratio-16x9">
-                    <iframe id="youtubeVideo" src="https://www.youtube.com/embed/mnnKv4sX3zI?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="videoModalLabel">Processo de Desenvolvimento da AI Ifood</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9">
+                            <iframe id="youtubeVideo" src="https://www.youtube.com/embed/mnnKv4sX3zI?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
             </div>
         </div>
     </section>
@@ -84,28 +82,42 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="process-step">
                         <div class="step-number">01</div>
-                        <h3 class="step-title">Análise de Dados</h3>
-                        <p>Coletamos e analisamos dados de usuários e restaurantes para identificar padrões e oportunidades de melhoria.</p>
+                        <h3 class="step-title">Criação dos Dados</h3>
+                        <p>Para poder realizar os testes, simulamos os dados, separando em base de dados Clientes e Resturantes.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="process-step">
                         <div class="step-number">02</div>
-                        <h3 class="step-title">Prototipagem</h3>
-                        <p>Criamos protótipos e modelos iniciais para testar diferentes abordagens de machine learning.</p>
+                        <h3 class="step-title">Limpeza dos Dados</h3>
+                        <p>Após gerar os dados, é separado os dados por região para fazer a análise.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="process-step">
                         <div class="step-number">03</div>
-                        <h3 class="step-title">Treinamento do Modelo</h3>
-                        <p>Implementamos e treinamos modelos de IA com dados reais para otimizar recomendações e previsões.</p>
+                        <h3 class="step-title">IA para Identificação Estilo do Restaurante</h3>
+                        <p>Criado um modelo para identificar se o novo prato condiz com o estilo do restaurante, por exemplo se a comida com demanda for sushi, o modelo identifica que não condiz com churrascarias premium e já tira do processo, economizando recursos.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="process-step">
                         <div class="step-number">04</div>
-                        <h3 class="step-title">Implementação</h3>
+                        <h3 class="step-title">IA para Coletar Dados da Nova Receita</h3>
+                        <p>Para este exemplo, foi criado uma IA que recebe a receita e retorna com os principais ingredientes para realizar, contudo poderia ser uma API também.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step">
+                        <div class="step-number">05</div>
+                        <h3 class="step-title">IA para Comparar os Ingredientes da Receita com do o Restaurante</h3>
+                        <p>Um terceiro modelo que avalia se os ingredientes presentes na receita condizem com os do restaurante e quais ingredientes o restaurante pode usar dos que já tem.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step">
+                        <div class="step-number">06</div>
+                        <h3 class="step-title">Relatório para os Restaurantes Selecionados</h3>
                         <p>Integramos a solução de IA à plataforma Ifood e monitoramos continuamente seu desempenho.</p>
                     </div>
                 </div>
