@@ -24,10 +24,10 @@
                         <a class="nav-link" href="#processo">Processo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#features">Funcionalidades</a>
+                        <a class="nav-link" href="#features">Funcionalidades IA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#timeline">Cronograma</a>
+                        <a class="nav-link" href="#timeline">Fluxo de Processo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contato">Contato</a>
@@ -44,7 +44,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <h1 class="hero-title">Desenvolvendo a <span>IA</span> do <span>Ifood</span>!</h1>
-                    <p class="hero-subtitle">Está IA do Ifood identifica pedidos de clientes dos quais o prato solicitado não tem na região, então a IA busca e informa aos restaurantes que podem fazer este prato, a recomendação de incluir no cardapio.</p>
+                    <p class="hero-subtitle">Está IA do Ifood identifica pedidos de clientes dos quais o prato solicitado não tem na região, então a IA busca e informa aos restaurantes que podem fazer este prato, a recomendação de incluir no cardapio.<br><br>Relembrando que este é apenas um projeto para compartilhar um fluxo que PODE atender a demanda dita, não necessáriamente a demanda real da empresa em questão.</p>
                     <a href="#processo" class="btn btn-ifood">Explorar Processo</a>
                 </div>
                 <div class="col-lg-6">
@@ -61,7 +61,7 @@
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="videoModalLabel">Processo de Desenvolvimento da AI Ifood</h5>
+                        <h5 class="modal-title" id="videoModalLabel">De onde veio esta IA?</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -103,7 +103,7 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="process-step">
                         <div class="step-number">04</div>
-                        <h3 class="step-title">IA para Coletar Dados da Nova Receita</h3>
+                        <h3 class="step-title">IA para Coletar Dados do Novo Prato</h3>
                         <p>Para este exemplo, foi criado uma IA que recebe a receita e retorna com os principais ingredientes para realizar, contudo poderia ser uma API também.</p>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
                     <div class="process-step">
                         <div class="step-number">05</div>
                         <h3 class="step-title">IA para Comparar os Ingredientes da Receita com do o Restaurante</h3>
-                        <p>Um terceiro modelo que avalia se os ingredientes presentes na receita condizem com os do restaurante e quais ingredientes o restaurante pode usar dos que já tem.</p>
+                        <p>Um terceiro modelo que avalia se os ingredientes presentes na nova receita condiz com os do restaurante e quais ingredientes o restaurante pode usar dos que já tem.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
@@ -135,8 +135,8 @@
                         <div class="feature-icon">
                             <i class="fas fa-robot"></i>
                         </div>
-                        <h3>Recomendações Personalizadas</h3>
-                        <p>Sugestões de restaurantes e pratos baseadas no histórico e preferências do usuário.</p>
+                        <h3>Analise de Perfil</h3>
+                        <p>Recomendação de pratos de acordo com o perfil do restaurante.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -144,8 +144,8 @@
                         <div class="feature-icon">
                             <i class="fas fa-bolt"></i>
                         </div>
-                        <h3>Otimização de Entregas</h3>
-                        <p>Previsão de tempo de entrega e roteirização inteligente para menores tempos de espera.</p>
+                        <h3>Informativo de Receitas</h3>
+                        <p>Elaboração de lista de ingredientes necessários para realizar a receita.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -153,8 +153,8 @@
                         <div class="feature-icon">
                             <i class="fas fa-chart-line"></i>
                         </div>
-                        <h3>Previsão de Demanda</h3>
-                        <p>Antecipação de picos de demanda para ajudar restaurantes a se prepararem melhor.</p>
+                        <h3>Comparação Inteligente de Viabilidade</h3>
+                        <p>Analise de viabilidade do novo prato para o restaurante com base nos ingredientes presentes no estabelecimento.</p>
                     </div>
                 </div>
             </div>
@@ -164,37 +164,51 @@
     <!-- Timeline Section -->
     <section id="timeline" class="timeline-section">
         <div class="container">
-            <h2 class="text-center section-title">Cronograma do Projeto</h2>
+            <h2 class="text-center section-title">Fluxo do Processo</h2>
             
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>Fase 1: Pesquisa</h3>
-                    <p>Análise de mercado e definição de requisitos</p>
-                    <span class="text-ifood">Junho 2023</span>
+                    <h3>Fase 1: Base de Dados</h3>
+                    <p>Criação do banco de dados Cliente -- Localidade, Comida Pesquisada e Comida Encontratada na Localidade ou Não</p>
+                    <span class="text-ifood">Criação do banco de dados Restaurantes -- Localidade, Cardápio e Lista de Ingredientes</span>
                 </div>
             </div>
             
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>Fase 2: Desenvolvimento</h3>
-                    <p>Criação dos primeiros modelos de machine learning</p>
-                    <span class="text-ifood">Julho 2023</span>
+                    <h3>Fase 2: Tratamento dos Dados</h3>
+                    <p>Tratado e separado os dados por localidade, colocando os restaurantes e clientes por setor.</p>
+                    <span class="text-ifood">Assim, é possível determinar se o item pesquisado do cliente é correspondido pelos restaurantes na área.</span>
                 </div>
             </div>
             
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>Fase 3: Testes</h3>
-                    <p>Validação dos modelos com dados reais</p>
-                    <span class="text-ifood">Agosto 2023</span>
+                    <h3>Fase 3: Modelo de IA para Indentificar Perfil do Restaurante</h3>
+                    <p>O modelo vai comparar o novo prato que foi indentificado como demanda não atendida e analisar se tem relação com o tipo de restaurante e outros pratos do restaurante.</p>
+                    <span class="text-ifood">Esta etapa é importante para evitar gerar custo nos outros dois modelos de AI, pois se o perfil não for condizente, pode ser retirada da esteira de processos.</span>
                 </div>
             </div>
             
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>Fase 4: Implementação</h3>
+                    <h3>Fase 4: Modelo de IA para Informar os Principais Ingredientes da Nova Receita</h3>
                     <p>Integração com a plataforma Ifood</p>
                     <span class="text-ifood">Setembro 2023</span>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Fase 5: Modelo de IA para Analisar Ingredientes da Receita e do Restaurante</h3>
+                    <p>Após todos os ingredientes da nova receita serem listados, é realizado uma comparação da receita com os ingredientes do restaurante por outro modelo de IA.</p>
+                    <span class="text-ifood">Assim, será enviada a lista de ingredientes da receita que o restaurante já tem, os que podem ser substituto na receita e os que faltam comprar.</span>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Fase 6: Desenvolvimento do Relatório</h3>
+                    <p>Após todas estas etapas é finalizado um relatório informando restaurantes ápitos a receberem novos pratos, quantidade de possíveis novos clientes com as receitas, receita e a lista de análise da etapa anterior.</p>
+                    <span class="text-ifood">Este relatório deverá ser utilizado para construir uma mensagem para os restaurantes, repassando todas as informações.</span>
                 </div>
             </div>
         </div>
