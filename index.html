@@ -83,42 +83,42 @@
                     <div class="process-step">
                         <div class="step-number">01</div>
                         <h3 class="step-title">Criação dos Dados</h3>
-                        <p>Para poder realizar os testes, simulamos os dados, separando em base de dados Clientes e Resturantes.</p>
+                        <p>Para viabilizar os testes, foram simulados dados e organizados em duas bases principais: Clientes e Restaurantes.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="process-step">
                         <div class="step-number">02</div>
                         <h3 class="step-title">Limpeza dos Dados</h3>
-                        <p>Após a geração, os dados são separados por região para a análise.</p>
+                        <p>Após a geração, os dados foram tratados e segmentados por região, preparando-os para a análise.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="process-step">
                         <div class="step-number">03</div>
-                        <h3 class="step-title">Identificação Estilo do Restaurante por IA</h3>
-                        <p>Desenvolvido um modelo para identificar se o novo prato condiz com o estilo do restaurante, por exemplo se a comida com demanda for sushi, o modelo identifica que não condiz com churrascarias premium e já as retira do processo, economizando recursos.</p>
+                        <h3 class="step-title">Identificação do Estilo do Restaurante por IA</h3>
+                        <p>Foi desenvolvido um modelo de IA capaz de identificar se o novo prato está alinhado ao estilo do restaurante. Por exemplo: se a demanda for por sushi, a IA descarta churrascarias premium do processo, evitando esforços desnecessários.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="process-step">
                         <div class="step-number">04</div>
-                        <h3 class="step-title">Coletar Dados do Novo Prato por IA</h3>
-                        <p>Para este exemplo, foi criado uma IA que recebe a receita e retorna com os principais ingredientes para realizar.</p>
+                        <h3 class="step-title">Extração dos Dados do Novo Prato por IA</h3>
+                        <p>Uma IA recebe a receita do prato em análise e retorna os principais ingredientes necessários para sua preparação.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="process-step">
                         <div class="step-number">05</div>
-                        <h3 class="step-title">IA para Comparar os Ingredientes da Receita com do o Restaurante</h3>
-                        <p>Um terceiro modelo que avalia se os ingredientes presentes na nova receita condiz com o tipo do restaurante e quais ingredientes o restaurante pode usar dos que já tem.</p>
+                        <h3 class="step-title">Comparação dos Ingredientes por IA</h3>
+                        <p>Outro modelo de IA avalia se os ingredientes da nova receita são compatíveis com o perfil do restaurante e identifica quais deles já estão disponíveis em seu estoque.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="process-step">
                         <div class="step-number">06</div>
-                        <h3 class="step-title">Relatório para os Restaurantes Selecionados</h3>
-                        <p>Ao final é gerado um relatório com todos os dados obtidos na análise com observações para os restaurantes selecionados sobre o novo prato a ser integrado ao menu, com os ingredientes presentes e faltantes no restaurante.</p>
+                        <h3 class="step-title">Relatório para Restaurantes Selecionados</h3>
+                        <p>Ao final, é gerado um relatório consolidado com todas as informações da análise, destacando os restaurantes aptos a incluir o novo prato no cardápio, bem como os ingredientes que já possuem e os que precisarão adquirir.</p>
                     </div>
                 </div>
             </div>
@@ -169,46 +169,46 @@
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Fase 1: Base de Dados</h3>
-                    <p>Criação do banco de dados Cliente -- Localidade, Comida Pesquisada e Comida Encontratada na Localidade ou Não</p>
-                    <span class="text-ifood">Criação do banco de dados Restaurantes -- Localidade, Cardápio e Lista de Ingredientes</span>
+                    <p>Criação das bases de dados:</p>
+                    <span class="text-ifood">Clientes — localidade, prato pesquisado e informação se o prato foi encontrado na região.<br>Restaurantes — localidade, cardápio e lista de ingredientes disponíveis.</span>
                 </div>
             </div>
             
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Fase 2: Tratamento dos Dados</h3>
-                    <p>Os dados tratados e separados por localidade, definindo os restaurantes e clientes por setor.</p>
-                    <span class="text-ifood">Assim, é possível determinar se o item pesquisado do cliente é correspondido pelos restaurantes naquela área.</span>
+                    <p>Após o tratamento, os dados são segmentados por localidade, classificando clientes e restaurantes por setor.</p>
+                    <span class="text-ifood">Isso permite verificar se os pratos pesquisados pelos clientes encontram correspondência nos restaurantes daquela área.</span>
                 </div>
             </div>
             
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Fase 3: Modelo de IA para Indentificar Perfil do Restaurante</h3>
-                    <p>O modelo vai comparar o novo prato que foi indentificado como demanda não atendida e analisar se tem relação com o tipo de restaurante e outros pratos do restaurante.</p>
-                    <span class="text-ifood">Esta etapa é importante para evitar gerar custo nos outros dois modelos de IA, pois se o perfil não for condizente, poderá ser retirada da esteira de processos.</span>
+                    <p>O modelo compara os pratos identificados como demandas não atendidas com o perfil de cada restaurante, analisando se estão alinhados ao seu estilo e cardápio.</p>
+                    <span class="text-ifood">Essa etapa é essencial para evitar custos nas etapas seguintes, pois descarta restaurantes que não possuem afinidade com o prato em questão.</span>
                 </div>
             </div>
             
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Fase 4: Modelo de IA para Informar os Principais Ingredientes da Nova Receita</h3>
-                    <p>Integração com a plataforma Ifood</p>
-                    <span class="text-ifood"></span>
+                    <p>Uma IA recebe a receita do novo prato e retorna a lista dos principais ingredientes necessários para sua preparação.</p>
+                    <span class="text-ifood">Também é possível utilizar uma API para extrair as informações ou informar a IA um material como pdf de um livro de receitas.</span>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Fase 5: Modelo de IA para Analisar Ingredientes da Receita e do Restaurante</h3>
-                    <p>Após todos os ingredientes da nova receita a serem listados, é realizado uma comparação da receita com os ingredientes do restaurante por outro modelo de IA.</p>
-                    <span class="text-ifood">Assim, será enviada a lista de ingredientes da receita que o restaurante já tem, os que podem ser substituídos na receita e os que faltam comprar.</span>
+                    <p>Com a lista de ingredientes do novo prato em mãos, outro modelo de IA realiza a comparação com o estoque do restaurante.</p>
+                    <span class="text-ifood">Assim, é possível identificar:<br><ul><li>Quais ingredientes já estão disponíveis</li> <li>Quais podem ser substituídos</li><li>Quais precisam ser adquiridos.</li></ul></span>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Fase 6: Desenvolvimento do Relatório</h3>
-                    <p>Após todas estas etapas é finalizado um relatório informando: restaurantes áptos a receberem novos pratos, quantidade de possíveis novos clientes com as receitas, as receitas e a lista de análise da etapa anterior.</p>
-                    <span class="text-ifood">Este relatório deverá ser utilizado para construir uma mensagem para os restaurantes, repassando todas as informações.</span>
+                    <p>Ao final, é gerado um relatório consolidado que informa: <ul><li>restaurantes aptos a incluir o novo prato,</li>número estimado de potenciais clientes,<li>receitas sugeridas,</li><li>análise detalhada de ingredientes.</li></ul> </p>
+                    <span class="text-ifood">Esse relatório pode servir de base para a comunicação com os restaurantes, repassando todas as informações necessárias de forma estruturada.</span>
                 </div>
             </div>
         </div>
@@ -220,7 +220,7 @@
             <div class="row">
                 <div class="col-lg-4 mb-4">
                     <h3 class="footer-title">IA Ifood</h3>
-                    <p>Desenvolvendo soluções inteligentes para revolucionar a experiência em delivery de comida.</p>
+                    <p>Um projeto de desenvolvimento de soluções inteligentes.</p>
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/henrique-antunes-aguiar-b8925116a/" target="_blank"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/HenriqueAntunesAguiar/ifood_ai__unmet_demand/tree/main" target="_blank"><i class="fab fa-github"></i></a>
@@ -230,9 +230,8 @@
                     <h5 class="footer-title">Links</h5>
                     <div class="footer-links">
                         <a href="#processo">Processo</a>
-                        <a href="#features">Funcionalidades</a>
-                        <a href="#timeline">Cronograma</a>
-                        <a href="#contato">Contato</a>
+                        <a href="#features">Funcionalidades IA</a>
+                        <a href="#timeline">Fluxo de Processo</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 mb-4">
